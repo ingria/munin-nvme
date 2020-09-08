@@ -2,6 +2,8 @@
 
 Simple plugin for displaying useful info about installed nvme drives.
 
+<img width="470" src="./example-graph.png" alt="Example graph">
+
 ## Requirements
 - Python 3.6
 - [nvme-cli](https://github.com/linux-nvme/nvme-cli)
