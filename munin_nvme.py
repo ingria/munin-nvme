@@ -10,7 +10,7 @@ nvme
 Shows info about installed nvme disks.
 
 =head1 VERSION
-0.0.1
+0.0.2
 
 =head1 COPYRIGHT
 GPL VERSION 3
@@ -104,7 +104,7 @@ def graph_throttle_info(devices: dict) -> str:
     values = {}
     config = dict(
         graph_title='NVMe disks throttling',
-        graph_category='disk',
+        graph_category='nvme',
         graph_info='The graph shows nvme disks throttling event count.',
         graph_args='--base 1000 --lower-limit 0',
         graph_vlabel='Thermal throttle events')
@@ -141,7 +141,7 @@ def graph_error_rate(devices: dict) -> str:
     values = {}
     config = dict(
         graph_title='NVMe media errors',
-        graph_category='disk',
+        graph_category='nvme',
         graph_info='The graph shows nvme disks errors (media_errors)',
         graph_args='--base 1000',
         graph_vlabel='media_errors')
@@ -163,7 +163,7 @@ def graph_spare(devices: dict) -> str:
     values = {}
     config = dict(
         graph_title='NVMe health',
-        graph_category='disk',
+        graph_category='nvme',
         graph_info='The graph shows nvme disks available spare blocks.',
         graph_args='--base 1000 --lower-limit 0 --upper-limit 105',
         graph_vlabel='Spare space left, %')
