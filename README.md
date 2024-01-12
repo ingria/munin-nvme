@@ -9,9 +9,9 @@ Simple plugin for displaying useful info about installed nvme drives.
 - [nvme-cli](https://github.com/linux-nvme/nvme-cli)
 
 ## Installation
-One-liner: downloads the plugin file directly to the plugins directory:
+One-liner: downloads the plugin file directly to the plugins directory and changes the config file:
 ```
-curl https://raw.githubusercontent.com/ingria/munin-nvme/master/munin_nvme.py -o /etc/munin/plugins/nvme && chmod +x /etc/munin/plugins/nvme && sed -i '1s/^/[nvme]\nuser root\n\n/' /etc/munin/plugin-conf.d/munin-node
+curl -s https://raw.githubusercontent.com/ingria/munin-nvme/master/munin_nvme.py -o /etc/munin/plugins/nvme && chmod +x /etc/munin/plugins/nvme && sed -i '1s/^/[nvme]\nuser root\n\n/' /etc/munin/plugin-conf.d/munin-node
 ```
 
 ### Step-by-step
